@@ -74,13 +74,13 @@ module.exports = {
 
 // change the script to the following
 "scripts": {
-    "build": "npx tailwindcss -i ./src/input.css -o ./build/assets/css/style.css --watch"
+    "blueprint": "npx tailwindcss -i ./src/input.css -o ./build/assets/css/style.css --watch"
 },
 ```
 
 ```bash
 # run the script in the terminal
-npm run build
+npm run blueprint
 ```
 
 **DO NOT forget to link the style.css file to your index.html file in the build folder.**
