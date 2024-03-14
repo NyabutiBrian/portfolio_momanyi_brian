@@ -12,9 +12,13 @@ html {
 body {
     min-height: 100dvh;
     background: linear-gradient(to bottom right, #013644, hsl(193, 97%, 21%));
+    font-family: Poppins;
 }
 h1 {
     font-size: clamp(1rem, 6vw, 2.5rem);
+}
+p {
+    font-size: clamp(0.9rem, 2vw, 1rem);
 }
 .primary-grad-to-br {
     background: linear-gradient(to bottom right, #013644, hsl(193, 97%, 21%));
