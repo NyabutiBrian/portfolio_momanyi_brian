@@ -30,26 +30,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-// OVERLAY EFFECT (PAGE)
-gsap.to("#overlay-page", 2, {
-  top: "-120%",
-  delay: 0,
-  ease: "Expo.easeInOut"
-});
-// OVERLAY APPEAR ONLY WHEN PAGE IS NAVIGATED TO AND NOT REFRESHED
-document.addEventListener("DOMContentLoaded", function() {
-  if (performance.navigation.type === 1) {
-    // Page is being loaded for the first time or refreshed
-    // DO not Show the overlay
-    document.getElementById("overlay-page").style.display = "none";
-  } else {
-    // Page is being navigated to
-    // show the overlay
-    document.getElementById("overlay-page").style.display = "flex";
-  }
-});
-
-
 // FOOTER SECTION
 // HIDING && SHOWING FOOTER
 let mybutton = document.getElementById("footer-sec");
