@@ -95,4 +95,4 @@ npm run blueprint
 
 ## Author
 
-- [Momanyi Brian]()
+- [Momanyi Brian](https://portfolio-momanyi-brian.vercel.app)
