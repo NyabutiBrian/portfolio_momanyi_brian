@@ -29,6 +29,9 @@ h4 {
 h5 {
     font-size: clamp(1.25rem, 0.61vi + 1.1rem, 1.58rem);
 }
+p {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+}
 .primary-grad-to-br {
     background: linear-gradient(to bottom right, #28e98c, #0f8a4f);
 }
