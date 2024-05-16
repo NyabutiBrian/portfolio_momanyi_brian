@@ -24,10 +24,13 @@
 ### HTML + CSS + Tailwind Development
 - This section shows the code templates.
 - The templates are in the folder blueprint.
-- Link to Portfolio Templates - [Portfolio Template](https://nyabutibrian.github.io/portfolio_momanyi_brian/blueprint/build/)
+- Links to Portfolio Templates
+- [blueprint](https://nyabutibrian.github.io/portfolio_momanyi_brian/blueprint/build/)
+- [blueprint2](https://nyabutibrian.github.io/portfolio_momanyi_brian/blueprint2/build/)
 
 ### Momanyi Brian Portfolio Website
 - [Momanyi Brian Portfolio Link](https://portfolio-momanyi-brian.vercel.app)
+
 
 ## Author
 

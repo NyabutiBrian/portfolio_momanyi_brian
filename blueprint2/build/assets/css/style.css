@@ -1026,6 +1026,19 @@ html{
   padding-bottom: 0.5rem;
 }
 
+.hero{
+  display: grid;
+  width: 100%;
+  place-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero > *{
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
 .input{
   flex-shrink: 1;
   -webkit-appearance: none;
@@ -1599,6 +1612,15 @@ html:has(.drawer-toggle:checked){
   z-index: -10;
 }
 
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex{
+  display: flex;
+}
+
 .aspect-\[1155\/678\]{
   aspect-ratio: 1155/678;
 }
@@ -1619,6 +1641,10 @@ html:has(.drawer-toggle:checked){
   width: 100%;
 }
 
+.max-w-screen-xl{
+  max-width: 1280px;
+}
+
 .-translate-x-1\/2{
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1629,16 +1655,34 @@ html:has(.drawer-toggle:checked){
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .transform-gpu{
   transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), 0) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.items-center{
+  align-items: center;
 }
 
 .justify-center{
   justify-content: center;
 }
 
+.space-x-2 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .overflow-hidden{
   overflow: hidden;
+}
+
+.rounded-3xl{
+  border-radius: 1.5rem;
 }
 
 .rounded-full{
@@ -1692,8 +1736,25 @@ html:has(.drawer-toggle:checked){
   padding-right: 2rem;
 }
 
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .pt-14{
   padding-top: 3.5rem;
+}
+
+.pt-36{
+  padding-top: 9rem;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.font-Bruno{
+  font-family: "Bruno Ace";
 }
 
 .text-lg{
@@ -1701,9 +1762,24 @@ html:has(.drawer-toggle:checked){
   line-height: 1.75rem;
 }
 
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-dark{
+  --tw-text-opacity: 1;
+  color: rgb(31 31 31 / var(--tw-text-opacity));
+}
+
 .text-secondary{
   --tw-text-opacity: 1;
   color: rgb(153 153 153 / var(--tw-text-opacity));
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 240 / var(--tw-text-opacity));
 }
 
 .opacity-30{
@@ -1713,6 +1789,12 @@ html:has(.drawer-toggle:checked){
 .blur-3xl{
   --tw-blur: blur(64px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.backdrop-blur-md{
+  --tw-backdrop-blur: blur(12px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 html {
@@ -1759,6 +1841,14 @@ li:hover svg {
   fill: #28E98C;
 }
 
+#drawer-sidebar {
+  z-index: 1;
+}
+
+#hero {
+  z-index: 0.9;
+}
+
 .hover\:border-primary:hover{
   --tw-border-opacity: 1;
   border-color: rgb(40 233 140 / var(--tw-border-opacity));
@@ -1780,6 +1870,10 @@ li:hover svg {
 
   .sm\:left-\[calc\(50\%-30rem\)\]{
     left: calc(50% - 30rem);
+  }
+
+  .sm\:w-\[600px\]{
+    width: 600px;
   }
 
   .sm\:w-\[72\.1875rem\]{
