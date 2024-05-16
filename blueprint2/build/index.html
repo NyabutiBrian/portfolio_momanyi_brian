@@ -26,10 +26,9 @@
 </head>
 <body>
 
-    <!-- Sidebar + Background Polygon -->
+    <!-- Background Polygon -->
     <section>
-        <div id="drawer-sidebar" class="fixed w-full top-0">
-            <!-- Background Polygon -->
+        <div class="fixed w-full top-0">
             <div class="relative isolate px-6 pt-14 lg:px-8">
                 <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
                     aria-hidden="true">
@@ -38,7 +37,12 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
+    <!-- Sidebar -->
+    <section>
+        <div id="drawer-sidebar" class="fixed w-full top-10">
             <!-- Sidebar -->
             <div class="px-4 sm:px-24">
                 <div class="drawer">
@@ -111,7 +115,7 @@
 
     <!-- Karibu -->
     <section>
-        <div id="karibu" class="max-w-screen-xl mx-auto pt-36 px-4">
+        <div id="karibu" class="max-w-screen-xl mx-auto pt-28 px-4">
             <div class="flex">
                 <div class="flex space-x-2 border border-secondary px-6 py-1 rounded-3xl">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="0.8rem" fill="#FFFFF0"><path d="M543.8 287.6c17 0 32-14 32-32.1c1-9-3-17-11-24L512 185V64c0-17.7-14.3-32-32-32H448c-17.7 0-32 14.3-32 32v36.7L309.5 7c-6-5-14-7-21-7s-15 1-22 8L10 231.5c-7 7-10 15-10 24c0 18 14 32.1 32 32.1h32v69.7c-.1 .9-.1 1.8-.1 2.8V472c0 22.1 17.9 40 40 40h16c1.2 0 2.4-.1 3.6-.2c1.5 .1 3 .2 4.5 .2H160h24c22.1 0 40-17.9 40-40V448 384c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v64 24c0 22.1 17.9 40 40 40h24 32.5c1.4 0 2.8 0 4.2-.1c1.1 .1 2.2 .1 3.3 .1h16c22.1 0 40-17.9 40-40V455.8c.3-2.6 .5-5.3 .5-8.1l-.7-160.2h32z"/></svg>
@@ -155,7 +159,7 @@
 
     <!-- About -->
     <section>
-        <div id="about" class="max-w-screen-xl mx-auto px-4">
+        <div id="about" class="max-w-screen-xl mx-auto px-4 scroll-m-32">
             <div class="flex">
                 <div class="flex space-x-2 border border-secondary px-6 py-1 rounded-3xl">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="0.8rem" fill="#FFFFF0"><path d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V256.9L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6h29.7c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V352H152z"/></svg>
@@ -170,7 +174,7 @@
                     <!-- 2 row grid -->
                     <div class="grid grid-rows-2 gap-4 w-full h-full">
                         <!-- 1 row -->
-                        <div class="row-span-1 border border-secondary hover:border-primary rounded-3xl flex items-center">
+                        <div class="row-span-1 border border-secondary hover:border-primary rounded-3xl backdrop-blur-3xl flex items-center">
                             <div class="px-8 text-white">
                                 <p>
                                     Dynamic experience as an IT specialist and 
@@ -184,14 +188,14 @@
                             <!-- 2 col grid -->
                             <div class="grid grid-cols-2 gap-2">
                                 <!-- col -->
-                                <div class="col-span-1 border border-secondary hover:border-primary rounded-3xl">
+                                <div class="col-span-1 border border-secondary hover:border-primary backdrop-blur-3xl rounded-3xl">
                                     <div class="flex flex-col items-center justify-center text-white h-full py-8">
                                         <p class="font-semibold font-Bruno text-xl text-primary">Momanyi</p>
                                         <p class="font-semibold font-Bruno text-xl text-primary">Brian</p>
                                     </div>
                                 </div>
                                 <!-- col -->
-                                <div class="col-span-1 border border-secondary hover:border-primary rounded-3xl">
+                                <div class="col-span-1 border border-secondary hover:border-primary backdrop-blur-3xl rounded-3xl">
                                     <div class="flex flex-col items-center justify-center text-white h-full py-8">
                                         <h4 class="font-semibold font-Bruno italic text-primary">2+</h4>
                                         <p class="italic text-sm">Years</p>
@@ -204,7 +208,7 @@
                 </div>
 
                 <!-- col -->
-                <div class="py-52 lg:py-0 col-span-2 lg:col-span-1 bg-contain bg-center bg-no-repeat" style="background-image: url('./assets/images/poet.webp');">
+                <div class="py-36 lg:py-0 col-span-2 lg:col-span-1 bg-contain bg-center bg-no-repeat" style="background-image: url('./assets/images/poet.webp');">
                 </div>
 
                 <!-- col -->
@@ -212,7 +216,7 @@
                     <!-- 2 row grid -->
                     <div class="grid grid-rows-2 gap-4 w-full h-full">
                         <!-- 1 row -->
-                        <div class="row-span-1 border border-secondary hover:border-primary rounded-3xl">
+                        <div class="row-span-1 border border-secondary hover:border-primary backdrop-blur-3xl rounded-3xl">
                             <div class="flex flex-col items-center justify-center text-white h-full py-8">
                                 <p class="italic text-sm">Freelancer</p>
                                 <p class="italic text-sm">Frontend Developer</p>
@@ -220,7 +224,7 @@
                             </div>
                         </div>
                         <!-- 1 row -->
-                        <div class="row-span-1 border border-secondary hover:border-primary rounded-3xl">
+                        <div class="row-span-1 border border-secondary hover:border-primary backdrop-blur-3xl rounded-3xl">
                             <div class="flex flex-col items-center justify-center text-white h-full py-8">
                                 <h4 class="font-semibold font-Bruno italic text-primary">10+</h4>
                                 <p class="italic text-sm">Completed</p>
@@ -229,6 +233,128 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume -->
+    <section>
+        <div id="resume" class="max-w-screen-xl mx-auto py-16 px-4 scroll-m-16">
+            <div class="flex">
+                <div class="flex space-x-2 border border-secondary px-6 py-1 rounded-3xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="0.8rem" fill="#FFFFF0"><path d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V256.9L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6h29.7c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V352H152z"/></svg>
+                    <p class="text-sm text-white">RESUME</p>
+                </div>
+            </div>
+
+            <div class="py-8">
+                <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+                    <!-- One Left -->
+                    <li>
+                        <div class="timeline-middle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#999999" class="h-5 w-5">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div class="timeline-start md:text-end mb-10">
+                            <time class="text-secondary font-Bruno italic">2023 - PRESENT</time>
+                            <div class="text-lg text-white italic">FREELANCER</div>
+                            <p class="text-secondary">Front End Developer</p>
+                        </div>
+                        <hr class="bg-secondary" />
+                    </li>
+
+                    <!-- Two Right -->
+                    <li>
+                        <hr class="bg-secondary" />
+                        <div class="timeline-middle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#999999" class="h-5 w-5">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div class="timeline-end mb-10">
+                            <time class="text-secondary font-Bruno italic">JAN 2023 – DEC 2023</time>
+                            <div class="text-lg text-white italic">POWER LEARN PROJECT</div>
+                            <p class="text-secondary">Junior Software Engineer</p>
+                        </div>
+                        <hr class="bg-secondary" />
+                    </li>
+
+                    <!-- Three Left -->
+                    <li>
+                        <hr class="bg-secondary" />
+                        <div class="timeline-middle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#999999" class="h-5 w-5">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div class="timeline-start md:text-end mb-10">
+                            <time class="text-secondary font-Bruno italic">JUN 2023 – NOV 2023</time>
+                            <div class="text-lg text-white italic">I.T ATTACHEE</div>
+                            <p class="text-secondary">IFMIS DEPARTMENT, NATIONAL TREASURY</p>
+                        </div>
+                        <hr class="bg-secondary" />
+                    </li>
+
+                    <!-- Four Right -->
+                    <li>
+                        <hr class="bg-secondary" />
+                        <div class="timeline-middle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#999999" class="h-5 w-5">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div class="timeline-end mb-10">
+                            <time class="text-secondary font-Bruno italic">MAY 2019 – NOV 2023</time>
+                            <div class="text-lg text-white italic">KCA UNIVERSITY</div>
+                            <p class="text-secondary">Bachelor of Science Information Technology</p>
+                        </div>
+                        <hr class="bg-secondary" />
+                    </li>
+
+                    <!-- Five Left -->
+                    <li>
+                        <hr class="bg-secondary" />
+                        <div class="timeline-middle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#999999" class="h-5 w-5">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div class="timeline-start md:text-end mb-10">
+                            <time class="text-secondary font-Bruno italic">MAR 2022 – MAY 2023</time>
+                            <div class="text-lg text-white italic">ALX AFRICA</div>
+                            <p class="text-secondary">Software Engineering</p>
+                        </div>
+                        <hr class="bg-secondary" />
+                    </li>
+
+                    <!-- Six Right -->
+                    <li>
+                        <hr class="bg-secondary" />
+                        <div class="timeline-middle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#999999" class="h-5 w-5">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div class="timeline-end mb-10">
+                            <time class="text-secondary font-Bruno italic">SEP 2022 – JAN 2023</time>
+                            <div class="text-lg text-white italic">GOOGLE COURSERA</div>
+                            <p class="text-secondary">Professional I.T Support Certificate</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>

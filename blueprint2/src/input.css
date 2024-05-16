@@ -43,6 +43,9 @@ label:hover svg,
 li:hover svg {
     fill: #28E98C;
 }
+li:hover time {
+    color: #28E98C;
+}
 #drawer-sidebar {
     z-index: 1;
 }
