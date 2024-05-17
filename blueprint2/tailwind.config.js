@@ -8,7 +8,7 @@ module.exports = {
         Bruno: ['"Bruno Ace"'],
       },
       colors: {
-        primary: '#28E98C',
+        primary: '#478cda',
         secondary: '#999999',
         white: '#FFFFF0',
         dark: '#1F1F1F',
