@@ -42,7 +42,7 @@
 
     <!-- Sidebar -->
     <section>
-        <div id="drawer-sidebar" class="fixed w-full top-10">
+        <div id="drawer-sidebar" class="anime-one fixed w-full top-10">
             <!-- Sidebar -->
             <div class="px-4 sm:px-24">
                 <div class="drawer">
@@ -112,6 +112,11 @@
             </div>
         </div>
     </section>
+
+    <div class='p-10 max-w-screen-xl mx-auto'>
+        <h3>from</h3>
+        <div class='anime-one bg-white rounded-lg w-20 h-20'></div>
+    </div>
 
     <!-- Karibu -->
     <section>
@@ -1358,7 +1363,22 @@
         </div>
     </footer>
 
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
     <!-- Custom Script -->
     <script src="./assets/js/script.js"></script>
+
+    <!-- GSAP -->
+    <script>
+        document.addEventListener("DOMContentLoaded", (event) => {
+            // gsap code here!
+            gsap.from('.anime-one', {
+                y: -100,
+                duration: 1.5,
+                ease: 'bounce',
+            })
+        });
+    </script>
 </body>
 </html>
